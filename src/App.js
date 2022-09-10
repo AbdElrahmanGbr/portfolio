@@ -7,12 +7,14 @@ import Home from './pages/Home/Home';
 
 const App = () => {
     return (
+        <>
         <Router>
             <Header />
             <Routes>
                 <Route exact path="/" element={<Home />} />
             </Routes>
         </Router>
+        </>
 
     );
 }

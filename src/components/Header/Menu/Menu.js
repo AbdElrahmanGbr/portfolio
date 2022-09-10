@@ -11,8 +11,8 @@ const Menu = () => {
         setMenu((prevMenu) => !prevMenu);
     }
     return (
-        <div className="header-menu" onClick={openMenu}>
-            { !menu && <img className="xs:hidden sm:hidden block header-hamburger" src={HamburgerMenu} alt="Open the menu" /> }
+        <div className="" onClick={openMenu}>
+            { !menu && <img className="tablet:hidden block header-hamburger" src={HamburgerMenu} alt="Open the menu" /> }
             { menu &&
                 <div className="grid">
                     <img className="place-self-end" src={CloseMenu} alt="Close the Menu" />
