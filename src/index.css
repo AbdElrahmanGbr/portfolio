@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+main, header{
     @apply max-w-6xl m-auto px-8;
+}
+footer{
+    @apply max-w-full;
 }
