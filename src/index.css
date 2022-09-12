@@ -2,9 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-main, header{
+body{
+    @apply font-customSans;
+}
+main, header, .portfolioContainer{
     @apply max-w-6xl m-auto px-8;
 }
 footer{
     @apply max-w-full;
+}
+
+.project-container{
+    @apply flex flex-col justify-between items-center tablet:flex-row my-20;
+}
+.project-content{
+    @apply w-full tablet:w-2/5;
 }

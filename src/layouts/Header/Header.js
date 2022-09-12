@@ -13,7 +13,7 @@ const Header = () => {
                 <nav className="tablet:flex flex hidden self-center">
                     <ul className="header-nav-list flex space-x-5">
                         <li className="nav-link nav-link-black"><Link to="/">HOME</Link></li>
-                        <li className="nav-link nav-link-black"><Link to="/">PORTFOLIO</Link></li>
+                        <li className="nav-link nav-link-black"><Link to="/portfolio">PORTFOLIO</Link></li>
                         <li className="nav-link nav-link-black"><Link to="/">CONTACT ME</Link></li>
                     </ul>
                 </nav>

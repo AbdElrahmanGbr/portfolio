@@ -6,7 +6,7 @@ import AboutImg from '../assets/homepage/mobile/image-homepage-profile.jpg';
 import AboutImgTablet from '../assets/homepage/tablet/image-homepage-profile.jpg';
 import AboutImgDesktop from '../assets/homepage/desktop/image-homepage-profile.jpg';
 import StyleButton from '../assets/icons/down-arrows.svg';
-import TalkComponent from '../components/TalkComponent/TalkComponent';
+import TalkComponent from '../components/TalkComponent';
 
 
 const Home = () => {
