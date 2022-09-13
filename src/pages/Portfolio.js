@@ -28,7 +28,7 @@ const Portfolio = () => {
                         <div className="border"></div>
                         <div className="project-content-text">
                             <h2 className="middle-title">Manage</h2>
-                            <p className="small-text">
+                            <p className="small-text my-5">
                                 This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.
                             </p>
                             <Link className="button button-project" to="/">VIEW PROJECT</Link>
@@ -49,7 +49,7 @@ const Portfolio = () => {
                         <div className="border"></div>
                         <div className="project-content-text">
                             <h2 className="middle-title">Bookmark</h2>
-                            <p className="small-text">
+                            <p className="small-text my-5">
                                 This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the features section.
                             </p>
                             <Link className="button button-white" to="/portfolio">VIEW PROJECT</Link>
@@ -70,7 +70,7 @@ const Portfolio = () => {
                         <div className="border"></div>
                         <div className="project-content-text">
                             <h2 className="middle-title">Insure</h2>
-                            <p className="small-text">
+                            <p className="small-text my-5">
                                 This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.
                             </p>
                             <Link className="button button-white" to="/portfolio">VIEW PROJECT</Link>
@@ -91,7 +91,7 @@ const Portfolio = () => {
                         <div className="border"></div>
                         <div className="project-content-text">
                             <h2 className="middle-title">Fylo</h2>
-                            <p className="small-text">
+                            <p className="small-text my-5">
                                 This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.
                             </p>
                             <Link className="button button-white" to="/portfolio">VIEW PROJECT</Link>

@@ -30,3 +30,39 @@ footer{
 .portfolioBtn{
     @apply p-3 border border-blue-magenta text-sm font-medium mt-5;
 }
+
+.small-text{
+    @apply text-blue-magenta leading-8 ;
+}
+
+.contact-form-error{
+    @apply  peer-invalid:visible text-red-700 italic text-sm;
+}
+
+.contact-form-input, .contact-form-area{
+    @apply flex flex-col h-36 content-between content-between;
+}
+
+input, textarea{
+    @apply focus:outline-green-300 bg-[#EBEBEC] py-3 mt-3;
+}
+
+.input-error{
+    @apply focus:outline-red-400;
+}
+
+button:disabled{
+    pointer-events: none;
+@apply bg-white text-blue-magenta border text-sm font-thin;
+}
+
+.button-form
+{
+    @apply w-[#20rem] bg-[#203A4C] text-white py-3 px-5 mt-5;
+}
+
+.button-form:hover
+{
+    @apply italic text-white bg-[#5fb4a2];
+}
+
