@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Footer from './layouts/Footer';
 import Portfolio from './pages/Portfolio';
 import ScrollToTop from "./ScrollToTop";
+import Contact from "./pages/Contact";
 
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
             <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route exact path="/portfolio" element={<Portfolio />} />
+                <Route exact path="/contact" element={<Contact />} />
             </Routes>
             <Footer />
         </Router>

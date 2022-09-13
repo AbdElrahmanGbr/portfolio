@@ -13,8 +13,20 @@ footer{
 }
 
 .project-container{
-    @apply flex flex-col justify-between items-center tablet:flex-row my-20;
+    @apply flex flex-col justify-between items-center tablet:flex-row my-20 text-blue-magenta;
 }
 .project-content{
     @apply w-full tablet:w-2/5;
+}
+
+.middle-title{
+    @apply font-customIbarra text-5.5xl font-bold text-blue-magenta;
+}
+
+.portfolioBtn:hover{
+    @apply bg-blue-magenta text-white italic;
+}
+
+.portfolioBtn{
+    @apply p-3 border border-blue-magenta text-sm font-medium mt-5;
 }

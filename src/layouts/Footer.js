@@ -11,7 +11,7 @@ const Footer = () => {
                 <ul className="flex space-x-5 flex-col tablet:flex-row">
                     <li className="nav-link"><Link to="/">HOME</Link></li>
                     <li className="nav-link"><Link to="/portfolio">PORTFOLIO</Link></li>
-                    <li className="nav-link"><Link to="/">CONTACT ME</Link></li>
+                    <li className="nav-link"><Link to="/contact">CONTACT ME</Link></li>
                 </ul>
             </div>
             <div className={'fill-white flex space-x-3'}>

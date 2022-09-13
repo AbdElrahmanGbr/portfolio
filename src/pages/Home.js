@@ -20,7 +20,7 @@ const Home = () => {
                         <img src={HeroImg} alt="Website in creation" className="w-full"/>
                         <div
                             className="tablet:block hidden absolute bottom-0 left-0 bg-white h-80 max-w-md pt-14 pr-14">
-                            <h1 className="text-4xl ">
+                            <h1 className="text-4xl middle-title">
                                 Hey, I’m Alex Spencer and I love building beautiful websites
                             </h1>
                             <div className="flex justify-start w-1/2 absolute bottom-0 left-0">
@@ -32,7 +32,7 @@ const Home = () => {
                         </div>
 
                         <div className="flex flex-col tablet:hidden">
-                            <h1 className="text-4xl">
+                            <h1 className="text-4xl middle-title">
                                 Hey, I’m Alex Spencer and I love building beautiful websites
                             </h1>
                             <div className="flex justify-start w-1/2 mt-3">
@@ -53,11 +53,11 @@ const Home = () => {
                         <source srcSet={AboutImgTablet} media="(min-width: 768px)"/>
                         <img src={AboutImg} alt="My profile"/>
                     </picture>
-                    <div className="self-center max-w-sm">
-                        <div className="border"></div>
-                        <div className="about-content-text">
+                    <div className="self-center max-w-sm text-blue-magenta">
+                        <div className="border mb-11"></div>
+                        <div className="about-content-text my-10">
                             <h2 className="middle-title">About Me</h2>
-                            <p className="text">
+                            <p className="leading-8 my-5">
                                 I’m a junior front-end developer looking for a new role in an exciting company. I focus
                                 on writing accessible HTML, using modern CSS practices and writing clean JavaScript.
                                 When writing JavaScript code, I mostly use React, but I can adapt to whatever tools are
@@ -65,7 +65,7 @@ const Home = () => {
                                 remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature
                                 whether that’s going for a walk, run or cycling. I’d love you to check out my work.
                             </p>
-                            <Link className="button button-white" to="/">GO TO PORTFOLIO</Link>
+                            <Link className="portfolioBtn" to="/">GO TO PORTFOLIO</Link>
                         </div>
                         <div className="border"></div>
                     </div>
