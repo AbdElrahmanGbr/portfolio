@@ -1,10 +1,10 @@
 import {Link} from 'react-router-dom';
-import HeroImg from '../assets/homepage/mobile/image-homepage-hero.jpg';
-import HeroImgTablet from '../assets/homepage/tablet/image-homepage-hero.jpg';
-import HeroImgDesktop from '../assets/homepage/desktop/image-homepage-hero.jpg';
-import AboutImg from '../assets/homepage/mobile/image-homepage-profile.jpg';
-import AboutImgTablet from '../assets/homepage/tablet/image-homepage-profile.jpg';
-import AboutImgDesktop from '../assets/homepage/desktop/image-homepage-profile.jpg';
+import HeroImg from '../assets/homepage/mobile/image-homepage-hero@2x.jpg';
+import HeroImgTablet from '../assets/homepage/tablet/image-homepage-hero@2x.jpg';
+import HeroImgDesktop from '../assets/homepage/desktop/image-homepage-hero@2x.jpg';
+import AboutImg from '../assets/homepage/mobile/image-homepage-profile@2x.jpg';
+import AboutImgTablet from '../assets/homepage/tablet/image-homepage-profile@2x.jpg';
+import AboutImgDesktop from '../assets/homepage/desktop/image-homepage-profile@2x.jpg';
 import StyleButton from '../assets/icons/down-arrows.svg';
 import TalkComponent from '../components/TalkComponent';
 
@@ -48,7 +48,7 @@ const Home = () => {
 
             <section>
                 <div className="flex flex-col justify-between mt-10 tablet:flex-row">
-                    <picture className="min-w-fit">
+                    <picture className="w-full tablet:w-1/2 md:w-full">
                         <source srcSet={AboutImgDesktop} media="(min-width: 1024px)"/>
                         <source srcSet={AboutImgTablet} media="(min-width: 768px)"/>
                         <img src={AboutImg} alt="My profile"/>

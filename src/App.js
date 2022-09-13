@@ -7,6 +7,7 @@ import Footer from './layouts/Footer';
 import Portfolio from './pages/Portfolio';
 import ScrollToTop from "./ScrollToTop";
 import Contact from "./pages/Contact";
+import Project from "./pages/Project/Project";
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
             <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route exact path="/portfolio" element={<Portfolio />} />
+                <Route exact path="/portfolio/:work" element={<Project />} />
                 <Route exact path="/contact" element={<Contact />} />
             </Routes>
             <Footer />
