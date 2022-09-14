@@ -23,11 +23,11 @@ const Home = () => {
                             <h1 className="text-4xl middle-title">
                                 Hey, I’m Alex Spencer and I love building beautiful websites
                             </h1>
-                            <div className="flex justify-start w-1/2 absolute bottom-0 left-0">
-                                <img src={StyleButton} alt="Style button" className="bg-[#1D3445] p-3"/>
-                                <div className="bg-[#203A4C]">
-                                    <p>ABOUT ME</p>
-                                </div>
+                            <div className="group aboutMeContainer">
+                                    <img src={StyleButton} alt="Style button" className="aboutMeBtn group-hover:bg-[#56A292]"/>
+                                    <p className="px-7 group-hover:bg-formBtnBg-notDisabled-hover group-hover:italic">
+                                        ABOUT ME
+                                </p>
                             </div>
                         </div>
 
@@ -35,11 +35,11 @@ const Home = () => {
                             <h1 className="text-4xl middle-title">
                                 Hey, I’m Alex Spencer and I love building beautiful websites
                             </h1>
-                            <div className="flex justify-start w-1/2 mt-3">
-                                <img src={StyleButton} alt="Style button" className="bg-[#1D3445] p-3"/>
-                                <div className="bg-[#203A4C]">
-                                    <p>ABOUT ME</p>
-                                </div>
+                            <div className="group aboutMeContainer">
+                                <img src={StyleButton} alt="Style button" className="aboutMeBtn group-hover:bg-[#56A292]"/>
+                                <p className="px-7 group-hover:bg-formBtnBg-notDisabled-hover group-hover:italic">
+                                    ABOUT ME
+                                </p>
                             </div>
                         </div>
                     </picture>
@@ -48,10 +48,10 @@ const Home = () => {
 
             <section>
                 <div className="flex flex-col justify-between mt-10 tablet:flex-row">
-                    <picture className="w-full tablet:w-1/2 md:w-full">
+                    <picture className="w-full tablet:w-1/2 md:w-full max-h-[540px]">
                         <source srcSet={AboutImgDesktop} media="(min-width: 1024px)"/>
                         <source srcSet={AboutImgTablet} media="(min-width: 768px)"/>
-                        <img src={AboutImg} alt="My profile"/>
+                        <img className="max-h-[540px] min-w-[300px]" src={AboutImg} alt="My profile"/>
                     </picture>
                     <div className="self-center max-w-sm text-blue-magenta">
                         <div className="border mb-11"></div>
@@ -65,7 +65,7 @@ const Home = () => {
                                 remote teams. When I’m not coding, you’ll find me outdoors. I love being out in nature
                                 whether that’s going for a walk, run or cycling. I’d love you to check out my work.
                             </p>
-                            <Link className="portfolioBtn" to="/">GO TO PORTFOLIO</Link>
+                            <Link className="portfolioBtn" to="/portfolio">GO TO PORTFOLIO</Link>
                         </div>
                         <div className="border"></div>
                     </div>

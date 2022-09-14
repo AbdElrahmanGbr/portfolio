@@ -2,70 +2,103 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
     @apply font-customSans;
 }
-main, header, .portfolioContainer{
+
+
+main, header, .portfolioContainer {
     @apply max-w-6xl m-auto px-8;
 }
-footer{
+
+.aboutMeContainer{
+    @apply  flex justify-start absolute bottom-0 left-0 text-white bg-aboutMeBg;
+}
+.aboutMeBtn{
+    @apply  bg-arrowDownBg p-3;
+}
+
+footer {
     @apply max-w-full;
 }
 
-.project-container{
+.project-container {
     @apply flex flex-col justify-between items-center tablet:flex-row my-20 text-blue-magenta;
 }
-.project-img{
-    @apply w-1/3;
-}
-.project-content{
-    @apply w-full tablet:w-2/5;
+
+.project-img {
+    @apply w-1/2;
 }
 
-.middle-title{
+.project-content {
+    @apply w-full tablet:w-2/6;
+}
+
+.project-content-text {
+    @apply my-20;
+}
+
+.button-white {
+    @apply py-4 px-10 border-blue-magenta border text-sm;
+}
+
+.button-white:hover {
+    @apply text-white bg-blue-magenta italic transition-colors duration-500;
+}
+
+.middle-title {
     @apply font-customIbarra text-5.5xl font-bold text-blue-magenta;
 }
 
-.portfolioBtn:hover{
-    @apply bg-blue-magenta text-white italic;
+.portfolioBtn:hover {
+    @apply bg-blue-magenta text-white italic  transition-colors duration-500;
 }
 
-.portfolioBtn{
+.portfolioBtn {
     @apply p-3 border border-blue-magenta text-sm font-medium mt-5;
 }
 
-.small-text{
+.small-text {
     @apply text-blue-magenta leading-8 ;
 }
 
-.contact-form-error{
-    @apply  peer-invalid:visible text-red-700 italic text-sm;
+.contact-form-error {
+    @apply peer-invalid:visible text-red-700 italic text-sm;
 }
 
-.contact-form-input, .contact-form-area{
+.contact-form-input, .contact-form-area {
     @apply flex flex-col h-36 content-between content-between;
 }
 
-input, textarea{
-    @apply focus:outline-green-300 bg-[#EBEBEC] py-3 mt-3;
+input, textarea {
+    @apply focus:outline-green-300 bg-inputBg-offWhite py-3 mt-3;
 }
 
-.input-error{
+.input-error {
     @apply focus:outline-red-400;
 }
 
-button:disabled{
+button:disabled {
     pointer-events: none;
-@apply bg-white text-blue-magenta border text-sm font-thin;
+    @apply bg-white text-blue-magenta border text-sm font-thin;
 }
 
-.button-form
-{
-    @apply w-[#20rem] bg-[#203A4C] text-white py-3 px-5 mt-5;
+.button-form {
+    @apply w-[#20rem] bg-formBtnBg-notDisabled text-white py-3 px-5 mt-5;
 }
 
-.button-form:hover
-{
-    @apply italic text-white bg-[#5fb4a2];
+.button-form:hover {
+    @apply italic text-white bg-formBtnBg-notDisabled-hover transition-colors duration-500;
 }
 
+.button-contact{
+    @apply border border-blue-magenta py-3 px-5 text-sm tablet:mt-0 mt-5 min-w-fit;
+}
+
+.button-contact:hover{
+    @apply text-white italic bg-blue-magenta transition-colors duration-500;
+}
+
+.footer-group-links{
+    @apply flex space-x-5 flex-col tablet:flex-row text-center tablet:space-y-0 space-y-5 mt-5 tablet:mt-0 ml-0 tablet:ml-10;
+}

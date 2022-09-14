@@ -11,10 +11,10 @@ const Header = () => {
                     <img src={LogoImg} alt="Design logo" />
                 </Link>
                 <nav className="tablet:flex flex hidden self-center">
-                    <ul className="header-nav-list flex space-x-5">
-                        <li className="nav-link nav-link-black"><Link to="/">HOME</Link></li>
-                        <li className="nav-link nav-link-black"><Link to="/portfolio">PORTFOLIO</Link></li>
-                        <li className="nav-link nav-link-black"><Link to="/contact">CONTACT ME</Link></li>
+                    <ul className="flex space-x-10 text-xs">
+                        <li className="text-homeFontColor"><Link to="/">HOME</Link></li>
+                        <li><Link to="/portfolio">PORTFOLIO</Link></li>
+                        <li><Link to="/contact">CONTACT ME</Link></li>
                     </ul>
                 </nav>
                 <div className="absolute top-8 right-8">

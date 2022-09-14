@@ -5,6 +5,13 @@ module.exports = {
         extend: {
             colors: {
                 "blue-magenta": "#33323D",
+                "inputBg-offWhite": "#EBEBEC",
+                "formBtnBg-notDisabled": "#203A4C",
+                "formBtnBg-notDisabled-hover": "#5fb4a2",
+                "homeFontColor": "rgb(95, 180, 162)",
+                "arrowDownBg": "#1D3445",
+                "aboutMeBg": "#203A4C",
+                "shadowColor": "5FB4A2",
             }, fontFamily: {
                 "customSans": ["Public Sans", ...defaultTheme.fontFamily.sans],
                 "customIbarra": ["Ibarra Real Nova", ...defaultTheme.fontFamily.serif],
