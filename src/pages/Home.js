@@ -1,4 +1,6 @@
 import {Link} from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
+
 import HeroImg from '../assets/homepage/mobile/image-homepage-hero@2x.jpg';
 import HeroImgTablet from '../assets/homepage/tablet/image-homepage-hero@2x.jpg';
 import HeroImgDesktop from '../assets/homepage/desktop/image-homepage-hero@2x.jpg';
@@ -23,12 +25,12 @@ const Home = () => {
                             <h1 className="text-4xl middle-title">
                                 Hey, I’m Alex Spencer and I love building beautiful websites
                             </h1>
-                            <div className="group aboutMeContainer">
+                            <HashLink smooth to="#about" className="group aboutMeContainer">
                                     <img src={StyleButton} alt="Style button" className="aboutMeBtn group-hover:bg-[#56A292]"/>
                                     <p className="px-7 group-hover:bg-formBtnBg-notDisabled-hover group-hover:italic">
                                         ABOUT ME
                                 </p>
-                            </div>
+                            </HashLink>
                         </div>
 
                         <div className="flex flex-col tablet:hidden">
@@ -46,7 +48,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section>
+            <section id="about">
                 <div className="flex flex-col justify-between mt-10 tablet:flex-row">
                     <picture className="w-full tablet:w-1/2 md:w-full max-h-[540px]">
                         <source srcSet={AboutImgDesktop} media="(min-width: 1024px)"/>

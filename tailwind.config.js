@@ -11,7 +11,8 @@ module.exports = {
                 "homeFontColor": "rgb(95, 180, 162)",
                 "arrowDownBg": "#1D3445",
                 "aboutMeBg": "#203A4C",
-                "shadowColor": "5FB4A2",
+                "shadowColor": "#5FB4A2",
+                "tagColor": "#5fb4a2",
             }, fontFamily: {
                 "customSans": ["Public Sans", ...defaultTheme.fontFamily.sans],
                 "customIbarra": ["Ibarra Real Nova", ...defaultTheme.fontFamily.serif],

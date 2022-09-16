@@ -7,7 +7,7 @@ import Footer from './layouts/Footer';
 import Portfolio from './pages/Portfolio';
 import ScrollToTop from "./ScrollToTop";
 import Contact from "./pages/Contact";
-import Project from "./pages/Project/Project";
+import Project from "./pages/Project";
 
 
 const App = () => {
